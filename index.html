@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suplemetos del Tano</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Tienda de Suplementos del Tano</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Carrito (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Productos</h2>
+            <div class="product" data-id="1" data-name="Proteína Whey" data-price="45.99">
+                <h3>Proteína Whey</h3>
+                <p>$45.99</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="product" data-id="2" data-name="Creatina" data-price="25.50">
+                <h3>Creatina</h3>
+                <p>$25.50</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="product" data-id="3" data-name="Aminoácidos BCAA" data-price="30.00">
+                <h3>Aminoácidos BCAA</h3>
+                <p>$30.00</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2>Carrito de Compras</h2>
+            <div id="cart-items"></div>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="empty-cart">Vaciar Carrito</button>
+            <button id="checkout">Comprar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Suplementos del Tano</p>
+    </footer>
+
+    
+</body>
+</html>
